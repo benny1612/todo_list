@@ -1,6 +1,7 @@
 todo_list=[]
-def adding_items(todo_list):
-    user_item=input("please add a task:")
-    todo_list.append(user_item)
+def add_tesk(todo_list:list,task:str):
+    todo_list.append(task)
     return todo_list
-adding_tasks=adding_items(todo_list)
+tesk_input=input("enter a tesk:")
+adding_tasks=add_tesk(todo_list,tesk_input)
+
