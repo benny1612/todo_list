@@ -1,11 +1,12 @@
 todo_list=[]
+#מוסיף משימה
 def add_tesk(todo_list:list,task:str):
     todo_list.append(task)
     return todo_list
 
-# adding_tasks=add_tesk(todo_list,tesk_input)
 
 
+#מראה רשימה של משימות
 def showing_list(todo_list):
     index=0
     if len(todo_list) == 0:
@@ -15,7 +16,7 @@ def showing_list(todo_list):
         index+=1
         print (str(index)+":",i)
 
-
+#תפריט
 def get_user_choice():
     flag=True
     user_choice = ""
