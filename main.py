@@ -13,17 +13,21 @@ def showing_list(todo_list):
          
     for i in todo_list:
         index+=1
-        print (index,i)
+        print (str(index)+":",i)
 
 
 def get_user_choice():
     flag=True
+    user_choice = ""
     while flag:
-        user_choice=int(input("""Hey what would you like to do? 
+        try:
+            user_choice=int(input("""Hey what would you like to do? 
         1.Add task
         2.View list
         3.Exit
         :"""))
+        except:
+            print("wrong choice!")
         match user_choice:
             case 1: 
                 add_tesk(todo_list,input("enter a tesk:"))
